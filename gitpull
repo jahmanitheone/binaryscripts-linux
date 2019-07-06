@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo .
+echo Recommendation:
+echo git pull %CMD% 
+echo .
+

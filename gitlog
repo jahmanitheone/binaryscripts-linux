@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CMD="git log --graph --decorate --all --pretty=oneline"
+echo CMD=$CMD
+$CMD
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo chmod +766 -Rf /var/run/postgresql
+#sudo postgres -D /home/pchauvet/pgsql/data >/home/pchauvet/pgsql/logfile 2>&1 &
+
+service postgressvc start

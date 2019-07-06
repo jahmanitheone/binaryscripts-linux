@@ -1,0 +1,4 @@
+#!/bin/bash
+
+. /mnt/FBIN/ripconfig/script/crtprj.sh
+

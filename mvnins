@@ -1,0 +1,12 @@
+#!/bin/bash
+
+. mvninfo
+
+CMD="mvn install -DskipTests=true $1 $2 $3"
+echo .
+echo $CMD
+echo .
+$CMD
+
+
+

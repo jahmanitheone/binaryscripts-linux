@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+CMD="mvn jetty:run"
+echo .
+echo $CMD
+echo .
+$CMD
+
+
+
+
+
+
+

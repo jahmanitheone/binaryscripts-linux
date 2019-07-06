@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo .
+echo "Schema $2 has to be created first"
+echo .
+
+echo .
+echo . Rename $1 schema  to $2
+echo .
+
+/opt/lampp/bin/mysql -u root --password="" $1 -sNe 'show tables' | 
+while read table; 
+do 
+	echo "Table: $table"
+	/opt/lampp/bin/mysql -u root --password="" -sNe "RENAME TABLE $1.$table TO $2.$table";
+done
+

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#cd /mnt/FDEV/workspacejhispster00
+#cd /mnt/FDEV/workspaceheroku
+#cd /mnt/FDEV/workspacejhipster02/prj21points02
+#cd /mnt/FDEV/workspaceoreillyws
+#cd /mnt/FDEV/workspacewscspring
+#cd /mnt/FDEV/workspaceangularngbook
+#cd /mnt/FDEV/workspaceangular1site
+#cd /mnt/FDEV/workspaceangularv1tut
+#cd /mnt/FDEV/workspaceangularv2tut
+#cd /mnt/FDEV/workspaceangulartesting
+#cd /mnt/FDEV/workspacespringauthen
+#cd /run/media/pchauvet/NDEV/workspaceoreillyws
+#cd /mnt/FDEV/workspacesoapui
+#cd /mnt/FDEV/workspacejava8rest/
+cd /opt/lampp/apps/wordpress/htdocs/wp-content/themes/barebonejava-angularver
+
+
+pwd

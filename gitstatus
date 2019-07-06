@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CMD="git status"
+echo CMD=$CMD
+
+$CMD

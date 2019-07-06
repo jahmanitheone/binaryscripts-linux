@@ -1,0 +1,7 @@
+#!/bin/bash
+
+CMD="nordvpn connect"
+echo $CMD
+
+$CMD
+

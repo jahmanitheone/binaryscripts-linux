@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export CMD="sudo /opt/lampp/mysql/scripts/ctl.sh start"
+echo $CMD
+
+$CMD
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+CMD="npm start"
+echo $CMD
+
+$CMD
+

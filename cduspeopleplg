@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /opt/lampp/apps/wordpress/htdocs/wp-content/plugins/dsp_dating
+
+pwd

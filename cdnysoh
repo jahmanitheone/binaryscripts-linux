@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /mnt/FTEMP2/CSRA/dev/CSCommonDev_16_1_1
+
+pwd

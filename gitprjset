@@ -1,0 +1,15 @@
+#!/bin/bash
+
+CMD="git init"
+echo CMD=$CMD
+$CMD
+
+CMD=". gitadd"
+echo CMD=$CMD
+$CMD
+
+CMD='. gitcommit "start"'
+echo CMD=$CMD
+$CMD
+
+

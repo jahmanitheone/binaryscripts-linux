@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CMD="mvn clean package -DskipTests=true"
+echo .
+echo $CMD
+echo .
+$CMD
+
+
+

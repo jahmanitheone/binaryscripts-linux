@@ -1,0 +1,12 @@
+#!/bin/bash
+clear 
+
+#CMD="cd /mnt/FBIN/apache-tomcat-8.5.23"
+CMD="cd /mnt/FBIN/apache-tomcat-7.0.78"
+echo .
+echo CMD=$CMD
+echo .
+
+$CMD
+
+pwd

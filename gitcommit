@@ -1,0 +1,17 @@
+#!/bin/bash
+
+CMD="git commit -am "
+ALLARGS=""
+
+#Get all the arguments
+for ARG in "$@"
+do
+
+	ALLARGS="$ALLARGS$ARG "
+done
+
+CMD="$CMD \"$ALLARGS\""
+echo $CMD
+
+$CMD
+

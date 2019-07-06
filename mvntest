@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CMD="mvn clean compile test"
+echo .
+echo $CMD
+echo .
+$CMD
+
+
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+CMD="npm server $1 $2 $3"
+echo $CMD
+
+$CMD
+

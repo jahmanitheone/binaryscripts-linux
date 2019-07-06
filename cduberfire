@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CMD="cd /mnt/FDEV/UBERFIRE"
+echo .
+echo CMD=$CMD
+echo .
+
+$CMD
+
+

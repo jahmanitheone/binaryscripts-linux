@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CMD="mvn dependency:tree"
+echo .
+echo . "Show Maven depencies for a project"
+echo .
+echo $CMD
+echo .
+$CMD
+
+
+

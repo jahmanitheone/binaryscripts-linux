@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CMD="mvn clean gwt:run -DskipTests=true $1 $2 $3"
+echo .
+echo $CMD
+echo .
+$CMD
+
+
+

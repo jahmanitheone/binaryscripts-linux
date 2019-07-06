@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cmd="cp -fr $1 $2"
+echo .
+echo $cmd
+echo .
+
+$cmd

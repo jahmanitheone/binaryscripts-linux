@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /mnt/FBIN/h2db/bin
+pwd
+./h2server.sh

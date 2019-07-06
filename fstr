@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#
+#grep -ir "getAudioFiles" .
+# fstr getAudioFiles *.java
+#
+echo .
+echo . Example:
+echo . grep -r "getAudioFiles" --include=*.java .
+echo .
+CMD="grep -ir \"$1\" --include=$2 . "
+echo .
+echo $CMD
+echo .
+echo . NOT WORKING
+echo .
+
+$CMD
+

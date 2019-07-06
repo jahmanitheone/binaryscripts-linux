@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export CMD="sudo /opt/lampp/apache2/scripts/ctl.sh start"
+echo $CMD
+
+$CMD
+

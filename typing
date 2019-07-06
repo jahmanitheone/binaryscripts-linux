@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+CMD=/usr/bin/gtypist
+echo $CMD
+
+$CMD

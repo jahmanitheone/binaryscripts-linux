@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CMD="git merge --no-ff $1"
+echo .
+echo . Pass the branch to merge as 1st argument
+echo .
+echo $CMD
+echo .
+
+$CMD
+

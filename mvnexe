@@ -1,0 +1,8 @@
+#!/bin/bash
+
+CMD="mvn exec:java"
+echo .
+echo $CMD
+echo .
+$CMD
+
