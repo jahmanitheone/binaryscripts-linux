@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CMD="git config -l"
+echo .
+echo . Show the git repository information
+echo .
+echo $CMD
+echo .
+
+$CMD
+

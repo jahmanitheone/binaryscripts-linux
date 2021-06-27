@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+CMD="sudo systemctl stop mysqld.service"
+echo .
+echo $CMD
+echo .
+$CMD
+
+CMD="sudo systemctl disable mysqld.service"
+echo .
+echo $CMD
+echo .
+$CMD
+
+
+
+
+
+

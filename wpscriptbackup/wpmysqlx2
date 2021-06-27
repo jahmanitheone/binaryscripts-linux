@@ -1,0 +1,33 @@
+#!/usr/bin/bash
+
+MYSQL_BASE_DIR=WPBASE=/opt/wordpress-5.3-0/mysql
+MYSQL_PIDFILE=$MYSQL_BASE_DIR/data/mysqld.pid
+MYSQL_MYSQLD=$MYSQL_BASE_DIR/bin/mysql
+MYSQL_MYCNF=$MYSQL_BASE_DIR/my.cnf
+MYSQL_SOCK=$MYSQL_BASE_DIR/tmp/mysql.sock
+MYSQL_DATA=$MYSQL_BASE_DIR/data
+MYSQL_LOG=$MYSQL_DATA/mysqld.log
+
+MYSQL_START="$MYSQL_MYSQLD --defaults-file=/opt/wordpress-5.3-0/mysql/my.cnf --mysqld=mysqld.bin --socket=$MYSQL_SOCK --datadir=$MYSQL_DATA --log-error=$MYSQL_LOG  --pid-file=$MYSQL_PIDFILE --lower-case-table-names=1 --user root --password bitnami_wordpress "
+
+cl
+echo .
+echo -----------------------------------
+echo MYSQL_BASE_DIR=$MYSQL_BASE_DIR
+echo -----------------------------------
+echo MYSQL_PIDFILE=$MYSQL_PIDFILE
+echo MYSQL_MYSQLD=$MYSQL_MYSQLD
+echo MYSQL_MYCNF=$MYSQL_MYCNF
+echo MYSQL_SOCK=$MYSQL_SOCK
+echo MYSQL_DATA=$MYSQL_DATA
+echo MYSQL_LOG=$MYSQL_LOG
+echo MYSQL_START=$MYSQL_START
+
+echo .
+echo .
+sudo $MYSQL_START 
+#>/dev/null 2>/dev/null &
+
+
+
+

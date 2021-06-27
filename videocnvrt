@@ -1,0 +1,31 @@
+#/!usr/bin/bash
+
+echo .
+echo Convert video using ffmpeg
+echo .
+echo videocnvrt inputfile vidspeed audspped outfile
+echo .     vidspeed \(0.5-double speed, 2.0-doubly slow\)
+echo .     sound tempo range \(0.5 - 2.0\) 
+echo .           atempo \(2-double speed, .5-slow 2x\)
+echo .           * To override limit set value 2x:
+echo .             "atempo=2.0,atempo=2.0" quadruple audio
+echo .     smooth video:
+echo        "minterpolate='mi_mode=mci:mc_mode=aobmc:vsbmc=1:fps=120'"   
+echo .
+echo . Ex: Double speed of video
+echo .     videocnvrt VTS_01_1.VOB 0.5 2 VTS_01_1.mp4
+echo . Ex: Double slow speed of video
+echo .     videocnvrt VTS_01_1.VOB 2.0 1.0 VTS_01_1.mp4
+echo . Ex: Triple slow speed of video
+echo .     videocnvrt VTS_01_1.VOB 3.0 1.0 VTS_01_1.mp4
+echo . Ex: Convert MP4 To Small FLV
+echo .     ffmpeg -i source.mp4 -c:v libx264 -ar 22050 -crf 28 target.flv
+echo .     ffmpeg -i a.mkv -c:v libx264 -ar 22050 -crf 28 cc.flv
+echo .     ffmpeg -i source.mp4 -c:v libx264 -ar 22050 -crf 28 target.flv
+echo .
+
+
+if [[ $# -eq 4 ]] ; then
+    ffmpeg -i $1 -filter_complex "[0:v]setpts=$2*PTS[v];[0:a]atempo=$3[a]" -map "[v]" -map  "[a]" -c:v libx264 -c:a aac $4
+fi
+

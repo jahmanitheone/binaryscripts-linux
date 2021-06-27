@@ -1,6 +1,12 @@
-#!/bin/bash
+#!/usr/bin/bash
 
-CMD="git status"
-echo CMD=$CMD
+CMD="git status $1"
+
+echo .
+echo "Usage"
+echo " git status"
+echo " git status -uno - A bit faster"
+echo .
+echo $CMD
 
 $CMD

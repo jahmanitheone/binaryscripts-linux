@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+CMD="npm uninstall -g angular-cli"
+echo .
+echo . $CMD
+echo .
+$CMD
+
+CMD="npm cache clean"
+echo .
+echo . $CMD
+echo .
+$CMD
+
+CMD="npm cache verify"
+echo .
+echo . $CMD
+echo .
+$CMD
+
+

@@ -1,0 +1,36 @@
+#!/bin/bash
+
+echo .
+echo Convert video to Smallest Video Format FLV format using ffmpeg
+echo .
+echo . Ex: Normal speed of video
+echo .     videocnvrtfvl VTS_01_1.MP4 1.0 1.0
+echo . Ex: Double speed of video
+echo .     videocnvrtfvl VTS_01_1.VOB 0.5 2
+echo . Ex: Double slow speed of video
+echo .     videocnvrtfvl VTS_01_1.VOB 2.0 1.0
+echo . Ex: Triple slow speed of video
+echo .     videocnvrtfvl VTS_01_1.MP4 3.0 1.0
+echo . Ex: Convert MP4 To Small FLV
+echo .
+
+
+if [[ $# -eq 3 ]] ; then
+    #Get file base name
+    fname=$(basename "$1")
+    fbname=${fname%.*}
+
+    echo .    
+    echo "$1"
+    echo $fname
+    echo .
+    echo $fbname
+    echo .
+
+    #for mpeg to mp4  --c:v copy 
+
+    ##ffmpeg -i "$1" -filter_complex "[0:v]setpts=$2*PTS[v];[0:a]atempo=$3[a]" -map "[v]" -map  "[a]" -c:a aac -ar 22050 -crf 26 "$fbname.mp4"
+    ffmpeg -fflags +genpts -i "$1" -r 24 "$2"
+
+fi
+

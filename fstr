@@ -1,19 +1,23 @@
 #!/bin/bash
 
-#
-#grep -ir "getAudioFiles" .
-# fstr getAudioFiles *.java
-#
 echo .
 echo . Example:
-echo . grep -r "getAudioFiles" --include=*.java .
+echo .      fstr getAudioFiles *.java - Look for getAudioFiles in all java subdirectory files.
+echo .      fstr getAudioFiles - Look for getAudioFiles in all subdirectory files.
 echo .
-CMD="grep -ir \"$1\" --include=$2 . "
+
+if [[ $# -eq 1 ]] ; then
+  CMD="grep -ir "$1" ."
+fi
+
+if [[ $# -eq 2 ]] ; then
+  CMD="grep -ir "$1" --include=$2 ."
+fi
+
 echo .
 echo $CMD
 echo .
-echo . NOT WORKING
-echo .
+
 
 $CMD
 

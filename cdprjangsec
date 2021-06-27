@@ -1,0 +1,13 @@
+#!/bin/bash
+
+CMD="cd /run/media/jahmanichauvet/FDEV/ANGULAR/workspaceangularsecurity04"
+
+echo "$CMD"
+echo .
+echo .
+echo pwd
+echo .
+
+$CMD 
+
+pwd

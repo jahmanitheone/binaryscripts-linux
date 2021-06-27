@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CMD="cd /mnt/FMISC/LinuxLessons/vpn" 
+
+echo .
+echo "$CMD"
+echo .
+
+$CMD 
+pwd

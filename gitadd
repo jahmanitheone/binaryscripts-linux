@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 CMD="git add --all"
 echo $CMD

@@ -1,6 +1,9 @@
 #!/bin/bash
 
-export CMD="sudo /opt/lampp/mysql/scripts/ctl.sh stop"
+#export CMD="sudo /opt/lampp/mysql/scripts/ctl.sh stop"
+#export CMD="/usr/bin/mysqladmin shutdown"
+
+CMD="sudo /opt/wordpress-4.9.4-1/mysql/scripts/ctl.sh stop"
 echo $CMD
 
 $CMD

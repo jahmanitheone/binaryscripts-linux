@@ -1,0 +1,11 @@
+#!/bin/bash
+WPBASE=/opt/uspeopleconnect/wordpress-5.3-0
+
+export CMD="sudo $WPBASE/manager-linux-x64.run"
+
+echo .
+echo $CMD
+echo .
+
+$CMD
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+      
+CMD="java -jar /mnt/FBIN/jenkins/jenkins.war --httpPort=8181"
+echo .
+echo $CMD
+echo .Admin User: pchauvet / pchauvet
+echo .
+echo . http://localhost:8181
+echo .
+
+$CMD
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+CMD="npm run-script $1"
+echo $CMD
+
+$CMD
+

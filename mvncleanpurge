@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CMD="mvn clean dependency:purge-local-repository -DactTransitively=false -Dmaven.skip.test=true $1"
+echo .
+echo $CMD
+echo .
+$CMD
+
+
+

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo .
+echo . Show status of a branch changes
+echo .
+CMD="git --no-pager show --stat $1"
+echo .
+echo $CMD
+echo .
+
+$CMD
+
+

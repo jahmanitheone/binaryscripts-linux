@@ -1,0 +1,16 @@
+#!/bin/bash
+SPRING_HOME=/mnt/FBIN/spring-2.2.5.RELEASE
+PATH=$SPRING_HOME/bin:$PATH:.
+#----
+export $SPRING_HOME
+export $PATH
+#----
+clear
+echo .
+echo SPRING_HOME=$SPRING_HOME
+echo .
+echo PATH=$PATH
+echo .
+
+
+

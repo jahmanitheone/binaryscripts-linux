@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#sudo mysqladmin -u root -p status
+#sudo chmod -R 777 /var/lib/mysql/
+#
+
+socket=/var/lib/mysql/mysql.sock
+export socket
+
+sudo mysqladmin -u root -p start
+sudo ps aux | mysql
+
+

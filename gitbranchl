@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CMD="git branch -r"
+echo .
+echo . List all branches
+echo .
+echo $CMD
+
+$CMD
+

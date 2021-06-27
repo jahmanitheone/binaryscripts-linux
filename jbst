@@ -1,0 +1,10 @@
+#!/bin/bash
+      
+CMD1=". cdjb"
+CMD2=". jstart"
+echo $CMD1
+echo $CMD2
+
+$CMD1
+$CMD2
+

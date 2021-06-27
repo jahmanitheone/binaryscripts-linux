@@ -1,0 +1,9 @@
+#!/bin/bash
+
+clear
+
+CMD="ng update @angular/core"
+echo $CMD
+
+$CMD
+

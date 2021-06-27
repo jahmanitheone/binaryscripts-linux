@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /mnt/FDEV/JHIPSTER/workspacejhipster02/jhello02
+pwd

@@ -1,4 +1,5 @@
 #!/bin/bash
-
-ps -a
+CMD="ps -aux"
+echo $CMD
+$CMD
 

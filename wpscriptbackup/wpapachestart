@@ -1,0 +1,15 @@
+#!/bin/bash
+WPBASE=/opt/wordpress-5.3-0
+
+export CMD="sudo $WPBASE/ctlscript.sh start apache"
+echo .
+echo $CMD
+$CMD
+echo .
+echo USPeopleConnect http://localhost
+# export CMD="/opt/google/chrome/chrome http://localhost"
+echo .
+echo $CMD
+$CMD
+
+

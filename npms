@@ -1,7 +1,3 @@
 #!/bin/bash
 
-CMD="npm start"
-echo $CMD
-
-$CMD
-
+. npmserver --open --watch --poll

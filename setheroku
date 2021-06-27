@@ -1,0 +1,17 @@
+#!/bin/bash
+
+clear
+
+HEROKU_HOME=/mnt/FBIN/heroku-linux-x64/bin
+PATH=$HEROKU_HOME:$PATH:
+#----
+export HEROKU_HOME
+export PATH
+#----
+echo .
+echo HEROKU_HOME=$HEROKU_HOME
+echo PATH=$PATH
+echo .
+
+
+

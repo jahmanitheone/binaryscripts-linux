@@ -1,0 +1,14 @@
+#!/bin/bash
+#WPBASE=/opt/wordpress-5.3-0
+#WPBASE=/opt/wordpress-4.9.4-1
+WPBASE=/opt/wordpress-4.6.1.php56-3
+
+
+export CMD="sudo $WPBASE/ctlscript.sh status apache"
+
+echo .
+echo $CMD
+echo .
+
+$CMD
+

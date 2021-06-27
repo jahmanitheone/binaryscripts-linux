@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#cd /opt/lampp/mysql/scripts/
+#pwd
+export CMD="sudo /opt/wordpress-4.9.4-1/apache2/scripts/ctl.sh start"
+echo $CMD
+
+$CMD
+

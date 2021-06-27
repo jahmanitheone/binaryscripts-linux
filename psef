@@ -1,4 +1,8 @@
 #!/bin/bash
+CMD="ps -ef"
+echo .
+echo $CMD
+echo .
+$CMD
 
-ps -ef
 

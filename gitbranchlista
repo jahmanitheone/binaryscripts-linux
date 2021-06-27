@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+CMD="git --no-pager branch -a --list -v"
+
+echo .
+echo . List all branches
+echo $CMD
+echo .
+
+$CMD
+

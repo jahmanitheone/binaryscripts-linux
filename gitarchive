@@ -1,0 +1,31 @@
+#!/usr/bin/bash
+
+CURDIR="brancharchives"
+if [ ! -d "$CURDIR" ] 
+then
+   mkdir $CURDIR
+fi
+
+count=1
+
+git for-each-ref --sort=-committerdate  --format='%(refname)' refs | \
+while read branch; do
+  #replace all / in reference name to _	 
+  rvar="${branch//\//_}"
+
+  varcnt="$count"
+  if [ "$count" -lt "10" ] 
+  then 
+  	varcnt="0$count"
+  fi
+  rvar="_$rvar"
+  rvar="$varcnt$rvar"
+
+  git archive --format zip --output ./brancharchives/$rvar.zip ${branch}
+
+  count=`expr $count + 1`
+done
+
+
+echo Archives branches in directory $CURDIR/
+ls -1 $CURDIR

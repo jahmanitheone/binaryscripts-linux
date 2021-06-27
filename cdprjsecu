@@ -1,0 +1,11 @@
+#!/bin/bash
+CMD="cd /run/media/jahmanichauvet/FDEV/ANGULAR/wordpressangularsecurity"
+pwd
+
+echo .
+echo "$CMD"
+echo .
+
+$CMD 
+
+

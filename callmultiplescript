@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+clear
+
+CMDs="gnome-terminal --wait -qe sclient"
+echo $CMDs 
+
+CMDe="gnome-terminal --wait -qe sserver"
+echo $CMDe 
+
+$CMDs &
+$CMDe &
+
+

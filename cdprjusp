@@ -1,0 +1,10 @@
+#!/bin/bash
+CMD="cd /opt/uspeopleconnect"
+echo .
+echo "$CMD"
+echo .
+
+$CMD 
+pwd
+
+

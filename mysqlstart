@@ -1,9 +1,5 @@
-#!/bin/bash
+#!/usr/bin/bash
 
-#cd /opt/lampp/mysql/scripts/
-#pwd
-export CMD="sudo /opt/lampp/mysql/scripts/ctl.sh start"
-echo $CMD
+mysqlservicestart
 
-$CMD
-
+#. lampmysqlstop

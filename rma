@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cmd="rm -fr .*"
+echo .
+echo $cmd
+echo .
+
+$cmd

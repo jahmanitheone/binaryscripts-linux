@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+echo .
+echo git commit -m \""$*"\"
+echo .
+
+git commit -m "$*"
+

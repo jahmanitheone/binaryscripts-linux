@@ -1,6 +1,7 @@
 #!/bin/bash
 
-CMD="npm server $1 $2 $3"
+#CMD="npm server $1 $2 $3"
+CMD="ng serve $1 $2 $3"
 echo $CMD
 
 $CMD

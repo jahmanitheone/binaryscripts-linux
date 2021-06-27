@@ -1,0 +1,25 @@
+#!/bin/bash
+
+HSQLDB_HOME=/mnt/FBIN/hsqldb
+PATH=./:$HSQLDB_HOME/bin/:$PATH
+
+#----
+export HSQLDB_HOME
+export PATH
+
+clear
+echo .
+echo HSQLDB_HOME=$HSQLDB_HOME
+echo .
+echo PATH=$PATH
+echo .
+echo Ex: 
+echo . hsqlserver --database.0 file:/home/pchauvet/data/mydb --dbname.0 xdb
+echo .
+
+
+CMD="java -classpath $HSQLDB_HOME/lib/hsqldb.jar org.hsqldb.server.WebServer $1 $2 $3 $4 $5 $6 $7"
+
+echo $CMD
+
+$CMD 

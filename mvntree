@@ -1,0 +1,10 @@
+#!/bin/bash
+CMD="mvn dependency:tree -Dverbose"
+
+echo .
+echo $CMD
+echo .
+$CMD
+
+
+

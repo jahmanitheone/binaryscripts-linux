@@ -1,9 +1,5 @@
-#!/bin/bash
+#!/usr/bin/bash
 
-#cd /opt/lampp/mysql/scripts/
-#pwd
+mysqlservicestop
 
-export CMD="sudo /opt/wordpress-4.9.4-1/mysql/scripts/ctl.sh stop"
-echo $CMD
-
-$CMD
+#. lampmysqlstop

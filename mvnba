@@ -1,0 +1,22 @@
+#!/bin/bash
+CMD="mvn spring-boot:run"
+DBG="-Dagentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000"
+
+
+if [ "$1" == "-d" ]; then
+    CMD="$CMD $DBG"
+fi
+
+echo .
+echo ". Pass -d to debug"
+echo .
+echo http://localhost:8080/
+echo .
+echo $CMD
+echo .
+
+$CMD
+
+
+
+

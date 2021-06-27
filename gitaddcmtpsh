@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+. gitaddcmt "$*"
+
+. gitp -s $1
+
+. gitl
+
+. gitb

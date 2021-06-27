@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /opt/wordpress-4.9.4-1/mysql/
+
+pwd

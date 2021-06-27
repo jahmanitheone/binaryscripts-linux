@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo .
+echo . Delete a branch difference, pass branch
+echo .
+
+#-d Delete local branch if already pushed and merged
+#-D Delete local branch regardless if already pushed and merged
+
+CMD="git branch -D $1"
+echo .
+echo $CMD
+echo .
+
+$CMD
+
+

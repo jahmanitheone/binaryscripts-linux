@@ -1,5 +1,4 @@
 #!/bin/bash
-
 . /mnt/FBIN/bin/lampmysqlstart
 . /mnt/FBIN/bin/lampwpstart
 

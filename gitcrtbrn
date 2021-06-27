@@ -1,0 +1,11 @@
+#!/bin/bash
+CMD="git checkout -b $1"
+
+echo .
+echo Git create branch - pass branch
+echo .
+echo $CMD
+echo .
+
+$CMD
+

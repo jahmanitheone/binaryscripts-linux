@@ -1,0 +1,44 @@
+#!/bin/bash
+
+echo . Reset branch as master
+echo . 
+
+if [[ $# -eq 1 ]] ; then
+    CMD="git checkout master"
+    echo .
+    echo . Checkout master
+    echo $CMD
+    $CMD
+    echo .
+
+    echo . Reset to a commit or branch
+    CMD="git reset --hard $1"
+    echo .
+    echo $CMD
+    echo .
+    $CMD
+    echo .
+
+    echo . Push change to master
+    CMD="git push --set-upstream origin master"
+    echo .
+    echo $CMD
+    echo .
+    $CMD
+    echo .
+
+    echo . Show result
+    CMD="gitl"
+    echo .
+    echo $CMD
+    echo .
+    $CMD
+    echo .
+fi
+
+if [[ $# -eq 0 ]] ; then
+    echo . Branch id is missing 
+fi
+
+
+. gitb

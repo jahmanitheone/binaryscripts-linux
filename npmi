@@ -1,7 +1,3 @@
 #!/bin/bash
 
-CMD="npm install"
-echo $CMD
-
-$CMD
-
+. npmins

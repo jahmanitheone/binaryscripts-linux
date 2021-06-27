@@ -1,0 +1,7 @@
+#!/bin/bash
+CMD="ps -af"
+echo .
+echo $CMD
+echo .
+$CMD
+

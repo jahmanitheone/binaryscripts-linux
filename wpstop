@@ -1,0 +1,13 @@
+#!/bin/bash
+#WPBASE=/opt/wordpress-5.3-0
+clear
+WPBASE=/opt/wordpress-4.6.1.php56-3
+
+export CMD="sudo $WPBASE/ctlscript.sh stop"
+
+echo .
+echo $CMD
+echo .
+
+$CMD
+

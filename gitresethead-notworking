@@ -1,0 +1,43 @@
+#!/bin/bash
+
+echo . Reset branch as Head and point to as master
+echo . 
+
+if [[ $# -eq 1 ]] ; then
+    CMD="git checkout $1"
+    echo .
+    echo . Checkout branch $1 
+    echo $CMD
+    $CMD
+    echo .
+
+    echo . Make HEAD and master the same branch
+    CMD="git branch -f master $1"
+    echo .
+    echo $CMD
+    echo .
+    $CMD
+    echo .
+
+    echo . Commit the branch as HEAD and master
+    CMD="git push origin master"
+    #CMD="git push --set-upstream origin master"
+    echo .
+    echo $CMD
+    echo .
+    $CMD
+    echo .
+
+    echo . Show result
+    CMD="gitl"
+    echo .
+    echo $CMD
+    echo .
+    $CMD
+    echo .
+fi
+
+if [[ $# -eq 0 ]] ; then
+    echo . Branch id is missing 
+fi
+

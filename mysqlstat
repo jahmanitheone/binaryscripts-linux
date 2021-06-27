@@ -1,9 +1,3 @@
 #!/bin/bash
 
-#cd /opt/lampp/mysql/scripts/
-#pwd
-
-export CMD="sudo /opt/lampp/mysql/scripts/ctl.sh status"
-echo $CMD
-
-$CMD
+. lampmysqlstat

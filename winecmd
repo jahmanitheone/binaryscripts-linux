@@ -1,0 +1,6 @@
+#!/bin/bash
+clear
+cd /home/pchauvet/.wine/drive_c/
+wine cmd
+
+

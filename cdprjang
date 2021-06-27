@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#CMD="cd /mnt/FDEV/ANGULAR/workspacein28minutes"
+#CMD="cd /mnt/FDEV/JHIPSTER/workspacefullstackV05/"
+#CMD="cd /mnt/FDEV/JHIPSTER/workspacejhipster02/kiejhipsterhelloworld02-web"
+#CMD="cd /mnt/FDEV/DROOLSWORKSPACE/workspace_kieandjhipster/"
+#CMD="cd /mnt/FDEV/ANGULAR/workspace_angular6_admiserstudio/workspaces/angular_admiserstudio_tutorial/website02"
+#CMD="cd /mnt/FDEV/ANGULAR/workspaceproangular6/"
+#CMD="cd /run/media/jahmanichauvet/FDEV/ANGULAR/workspaceangularmysql/moriohcom/"
+#CMD="cd /run/media/jahmanichauvet/FDEV/ANGULAR/workspaceangularserver/levelup/"
+#CMD="cd /run/media/jahmanichauvet/FDEV/ANGULAR/workspaceinmemorydb/06inmemorydb"
+CMD="cd /run/media/jahmanichauvet/FDEV/ANGULAR/workspaceangularserver/positronxio/angular-httpclient-app"
+
+
+
+
+echo .
+echo "$CMD"
+echo .
+echo pwd
+echo .
+
+$CMD 
+
+pwd

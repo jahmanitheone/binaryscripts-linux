@@ -1,0 +1,8 @@
+#!/bin/bash
+
+CMD="gnome-terminal --wait -qe dbeaver > /dev/null 2>&1 &"
+
+echo $CMD
+
+$CMD
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CMD="grep \"$1\" '$2'"
+echo .
+echo $CMD
+echo .
+
+$CMD
+
+

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+cl
+
+# TR_APP_VERSION
+# TR_TIME_LOCALTIME
+# TR_TORRENT_DIR
+# TR_TORRENT_HASH
+# TR_TORRENT_ID
+# TR_TORRENT_NAME
+
+TR_TORRENT_DIR="/run/media/pchauvet/FBITTORENT"
+TR_TORRENT_NAME="'Fullstack Web Development With Laravel and Vue.js'"
+
+CURPROJECT="$TR_TORRENT_DIR/ACTIVE/$TR_TORRENT_NAME"
+DONEDIR="$TR_TORRENT_DIR/DONE/"
+
+CMD="mv $CURPROJECT $DONEDIR"
+echo $CMD
+echo $CMD >> "$DONEDIR/done.log"
+
+$CMD
+
+

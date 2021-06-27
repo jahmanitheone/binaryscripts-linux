@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+CMD="psa | grep $1 $2"
+echo $CMD
+$CMD
+

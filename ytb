@@ -1,7 +1,4 @@
-ytube.sh https://youtu.be/m3EFMhl8n30
-ytube.sh https://www.youtube.com/watch?v=fbVD32w1oTo&list=PL2CB1F80266E986EA
-ytube.sh https://www.youtube.com/watch?v=cbU12Tw7Q4U&list=PLLnpHn493BHGACfv4rC29kJamYMtw34D9
+#!/bin/bash
 
+ytube.sh $1 $2 $3
 
-ytube.sh https://www.youtube.com/watch?v=YdlnEWC-7Wo&list=PLBB24CFB073F1048E
-ytube.sh https://www.youtube.com/playlist?list=PLBB24CFB073F1048E

@@ -1,6 +1,10 @@
 #!/bin/bash
 
-export CMD="sudo /opt/lampp/mysql/scripts/ctl.sh start"
+#export CMD="sudo /opt/lampp/mysql/scripts/ctl.sh start"
+#export CMD="sudo /opt/lampp/mysql/scripts/ctl.sh start"
+#export CMD="/usr/bin/mysqladmin start"
+#export CMD="sudo /opt/wordpress-4.9.4-1/mysql/scripts/ctl.sh start"
+CMD="sudo /opt/wordpress-4.9.4-1/mysql/scripts/ctl.sh start"
 echo $CMD
 
 $CMD

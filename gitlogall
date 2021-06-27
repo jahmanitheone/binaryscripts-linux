@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+CMD="git --no-pager log -p -2 --graph --decorate --all --pretty=oneline"
+
+echo .
+echo CMD=$CMD
+echo .
+
+$CMD
+

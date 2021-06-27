@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CMD="mvn spring:run"
+echo .
+echo http://localhost:8080
+echo .
+echo $CMD
+echo .
+
+$CMD
+
+

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+CMD="git branch $1"
+echo .
+echo $CMD
+echo .
+$CMD
+
+CMD="git checkout $1"
+echo .
+echo $CMD
+echo .
+$CMD
+
+CMD="gitb"
+echo .
+echo $CMD
+echo .
+$CMD

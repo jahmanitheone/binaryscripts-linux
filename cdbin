@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /mnt/FBIN/bin
-pwd
+pwd .

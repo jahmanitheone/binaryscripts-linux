@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CMD="find . -name "$1""
+CMD="find . -name "$1" "$2""
 echo .
 echo $CMD
 echo .

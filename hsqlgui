@@ -1,0 +1,27 @@
+#!/bin/bash
+
+HSQLDB_HOME=/mnt/FBIN/hsqldb
+PATH=./:$HSQLDB_HOME/bin/:$PATH
+
+#----
+export HSQLDB_HOME
+export PATH
+
+clear
+echo .
+echo HSQLDB_HOME=$HSQLDB_HOME
+echo .
+echo PATH=$PATH
+echo .
+echo Ex: 
+echo . hsqlgui 
+echo . jdbc:hsqldb:file:/home/pchauvet/data/mydb
+echo . jdbc:hsqldb:file:/home/pchauvet/data/mydb hsqldb.lock_file=false;readonly=true;
+echo .
+
+
+CMD="java -classpath $HSQLDB_HOME/lib/hsqldb.jar org.hsqldb.util.DatabaseManager $1 $2 $3 $4 $5 $6 $7"
+
+echo $CMD
+
+$CMD 

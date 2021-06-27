@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CMD="git init --bare"
+echo .
+echo . Initialize a git repository
+echo .
+echo $CMD
+echo .
+
+$CMD
+

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Revert changes to modified files.
+CMD="git reset --hard"
+echo .
+echo $CMD
+$CMD
+
+# Remove all untracked files and directories.
+CMD="git clean -fd"
+echo .
+echo $CMD
+echo .
+$CMD
+
+CMD="git checkout -- ."
+echo .
+echo $CMD
+echo .
+$CMD
+

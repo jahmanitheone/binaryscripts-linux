@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CMD="dnf list | grep $1"
+echo .
+echo Ex: dnf list | grep mysql
+echo $CMD
+echo .
+
+$CMD
+

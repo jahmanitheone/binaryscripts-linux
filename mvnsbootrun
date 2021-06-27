@@ -1,0 +1,25 @@
+#!/bin/bash
+clean
+
+CMD="mvn spring-boot:run"
+DBG="-Dagentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000 -Xrunjdwp"
+CMDBRWS="google-chrome http://localhost:8080"
+
+
+if [ "$1" == "-d" ]; then
+    CMD="mvnDebug spring-boot:run"
+fi
+
+echo .
+echo ". Pass -d to debug"
+echo .
+
+#Load maven in a shell in the background
+echo "gnome-terminal --wait -qe $CMD"
+gnome-terminal --wait -qe "$CMD" &
+
+#Load browser in a shell in the background
+echo "gnome-terminal --wait -qe $CMDBRWS"
+gnome-terminal --wait -qe "$CMDBRWS" &
+
+

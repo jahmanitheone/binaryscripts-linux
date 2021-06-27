@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo .
+echo . Turn off certificate validation.
+echo .
+
+CMD="git config --global http.sslVerify false"
+echo .
+echo $CMD
+echo .
+
+$CMD
+
+

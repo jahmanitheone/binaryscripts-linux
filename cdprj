@@ -1,9 +1,29 @@
 #!/bin/bash
+clear
 
 #CMD="cd /mnt/FDEV/ANGULAR/workspacein28minutes"
-CMD="cd /mnt/FDEV/JHIPSTER/workspacefullstackV05/"
+#CMD="cd /mnt/FDEV/JHIPSTER/workspacefullstackV05/"
+#CMD="cd /mnt/FDEV/JHIPSTER/workspacejhipster02/kiejhipsterhelloworld02-web"
+#CMD="cd /mnt/FDEV/DROOLSWORKSPACE/workspace_kieandjhipster/"
+#CMD="cd /mnt/FDEV/SPRING/CORONAVIRUS"
+#CMD="cd /mnt/FDEV/SPRING/SPRINGSECURITY/workspacebaeldung/springsecurity_stepbystep"
+#CMD="cd /run/media/pchauvet/FDEV/SPRING/SPRINGSECURITY/workspaceaikiinc/workspacespringbootsecurity14/springsecurity-oauth2-app-parent"
+#CMD="cd /run/media/pchauvet/FDEV/TESTING/workspace-restapi-postman/DOWNLOAD/api-playground-master"
+#CMD="cd /run/media/pchauvet/FDEV/SPRING/MICROSERVICES/aikiinc-microservices/microservices_02_spring_boot_base_project"
+
+
+# CMD="cd /run/media/pchauvet/FDEV/DOCKER/workspace-docker02/docker-02-startup"
+# CMD="cd /run/media/pchauvet/FDEV/KUBERNETES/workspacekubernetes/kubernetes-02"
+#CMD="cd /run/media/pchauvet/FDEV/SPRING/WEBFLUX/02-teach-reactive-spring"
+#CMD="cd/run/media/pchauvet/FDEV/SPRING/WEBFLUX/04-teach-reactive-spring-mongo-db/_stepsandlessons/06-crt-mongodb-repository:Q "
+CMD="cd /run/media/pchauvet/FDEV/SPRING/SPRINGREACTOR/workspace-techio/prj-02-spring-react-lite-rx"
+
+
+
 echo .
 echo "$CMD"
+echo .
+echo pwd
 echo .
 
 $CMD 

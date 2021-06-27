@@ -1,0 +1,11 @@
+#!/bin/bash
+WPBASE=/opt/wordpress-5.3-0
+
+export CMD="sudo $WPBASE/ctlscript.sh restart"
+
+echo .
+echo $CMD
+echo .
+
+$CMD
+

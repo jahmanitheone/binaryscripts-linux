@@ -5,12 +5,24 @@ echo Recommended push commands:
 echo git push master:master
 echo git push origin:master
 echo git push --tags
-echo git push
+echo git push -s [branchname]
+echo git push branchname
+echo . runs git push --set-upstream branchname
 echo .
 echo .
 
 
 CMD="git push"
+if [[ $# -eq 2 ]] ; then
+  if [[ "$1" -eq "-s" ]] ; then 
+      CMD="git push --set-upstream origin $2"
+  fi  
+fi
+
+if [[ $# -eq 1 ]] ; then
+   CMD="git push "$1""
+fi
+
 echo $CMD
 
 $CMD

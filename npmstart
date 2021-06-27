@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CMD="npm start"
+CMD="npm start $1 $2 $3"
 echo $CMD
 
 $CMD

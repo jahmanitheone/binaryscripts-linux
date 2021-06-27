@@ -1,0 +1,7 @@
+#!/bin/bash
+
+/run/media/pchauvet/FBIN/bin/setjdk12
+
+java -jar /run/media/pchauvet/FBIN/ripconfig/ripaudio.jar /run/media/pchauvet/FBIN/ripconfig/riaudioconfig.properties
+
+#pause

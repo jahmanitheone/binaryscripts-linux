@@ -1,0 +1,9 @@
+#!/bin/bash
+
+CMD="cd /mnt/FBIN/JBOSSESB/jboss-5.1.0.GA/bin"
+
+echo .
+echo $CMD
+echo .
+
+$CMD

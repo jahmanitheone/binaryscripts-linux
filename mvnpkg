@@ -1,6 +1,7 @@
 #!/bin/bash
 
-CMD="mvn clean package -DskipTests=true"
+#CMD="mvn clean package -DskipTests=true"
+CMD="mvn clean package -Dmaven.test.skip=true"
 echo .
 echo $CMD
 echo .

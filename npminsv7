@@ -1,0 +1,4 @@
+!#/usr/bin/bash
+echo "npm install -g @angular/cli@7"
+
+npm install -g @angular/cli@7

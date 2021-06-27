@@ -1,0 +1,27 @@
+#/!usr/bin/bash
+
+echo .
+echo Slice a video from a starting time, extend to a period of time. 
+echo .
+echo Usage:
+echo    videoslice inputvideo.mp4 outputvideo.mp4 00:00:00 00:01:18
+echo with no sound
+echo    videoslice inputvideo.mp4 outputvideo.mp4 00:00:00 00:01:18 -an
+echo .
+
+#/!usr/bin/bash
+
+if [[ $# -eq 4 ]] ; then
+	CMD="ffmpeg -ss $3 -i $1 -t $4 -c:v libx264 -c:a copy $2"
+	echo "Slice with sound"
+	echo $CMD
+	$CMD
+fi
+
+if [[ $# -eq 5 ]] ; then
+	CMD="ffmpeg -ss $3 -i $1 -t $4 -c:v libx264 -c:a copy -an $2"
+	echo "Slice with no sound"
+	echo $CMD
+	$CMD
+fi
+

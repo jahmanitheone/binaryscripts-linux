@@ -1,0 +1,4 @@
+#!/bin/bash
+
+java -jar /mnt/FBIN/violetuml/violetumleditor-3.0.0.jar
+

@@ -1,5 +1,5 @@
 #!/bin/bash
-JAVA_HOME=/usr/share/java-1.7.0
+JAVA_HOME=/mnt/FBIN/java-1.7.0
 PATH=$JAVA_HOME/bin:$PATH:.
 CLASSPATH=$JAVA_HOME/jre/lib/rt.jar;
 #----

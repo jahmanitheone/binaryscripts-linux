@@ -1,0 +1,26 @@
+#!/bin/bash
+
+clear
+
+#echo .
+#echo . Install CLI Local Project:
+#echo .    sudo npm install @angular/cli
+#echo
+#echo . Install CLI version 5:
+#echo .    sudo npm -g install @angular/cli@1.5.*
+#echo .
+#echo . Install CLI version 6:
+#echo .    sudo npm install @angular/cli@6.1.*
+#echo .
+#echo . Install CLI version 8:
+#echo .    sudo npm install @angular/cli@8.*
+#echo .
+#echo . Install CLI the latest:
+#echo .    sudo npm install --save-dev @angular/cli@latest
+#echo .
+
+CMD="npm install"
+echo $CMD
+
+$CMD
+

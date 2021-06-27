@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /mnt/FMISC/LinuxLessonNew/vpn/nordvpn
+cd /mnt/FMISC/LinuxLessons/vpn/nordvpn
 pwd

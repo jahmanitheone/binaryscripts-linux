@@ -1,0 +1,22 @@
+#!/bin/bash
+
+. mvnb $1 $2
+
+#Open browser
+CMDBRWS="browserchrome http://localhost:8080"
+echo .
+echo ". Pass -d to debug"
+echo .
+echo $CMD
+echo .
+echo $CMDBRWS
+echo .
+
+$CMD
+
+$CMDBRWS
+
+
+
+
+

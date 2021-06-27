@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /mnt/FDATA/gitrepository/
+cd /mnt/FTEMP/GITREPOSITORY/
 pwd

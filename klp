@@ -1,16 +1,8 @@
 #!/bin/bash
-
 CMD="sudo kill -9 $1"
 echo CMD=$CMD
 echo .
 $CMD
 
-CMD="sudo kill -TERM $1"
-echo CMD=$CMD
-echo .
-$CMD
+. psa
 
-CMD="ps a"
-echo CMD=$CMD
-echo .
-$CMD

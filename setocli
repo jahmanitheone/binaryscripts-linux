@@ -1,0 +1,17 @@
+#!/bin/bash
+
+clear
+
+OPENSHITCLI_HOME=/mnt/FBIN/openshift
+PATH=$OPENSHITCLI_HOME:$PATH:
+#----
+export OPENSHITCLI_HOME
+export PATH
+#----
+echo .
+echo OPENSHITCLI_HOME=$OPENSHITCLI_HOME
+echo PATH=$PATH
+echo .
+
+
+
