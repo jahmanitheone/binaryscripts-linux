@@ -1,9 +1,0 @@
-#!/bin/bash
-
-CMD="cd /mnt/FBIN/jbpm-installer-7.0.0.Final/"
-
-echo .
-echo $CMD
-echo .
-
-$CMD
